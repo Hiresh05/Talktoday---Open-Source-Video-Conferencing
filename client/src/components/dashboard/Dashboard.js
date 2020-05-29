@@ -37,7 +37,7 @@ class Dashboard extends Component {
               onSubmit = {this.onSubmit}
             >
               
-            <a href="https://www.w3schools.com">Video</a>
+            <a href="https://talktoday.live">Video</a>
             </button>
             <br></br>
             <button

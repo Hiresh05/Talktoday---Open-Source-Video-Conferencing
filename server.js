@@ -6,6 +6,7 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 
 const app = express();
+const path = require("path");
 
 // Bodyparser middleware
 app.use(
@@ -14,6 +15,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, "client/build")))
 
 // DB Config
 const db = require("./config/keys").mongoURI;
